@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %} Add income {% endblock %}
+
+{% block body %}
+
+	<main>
+			
+			<article>
+				<div class="container">
+				
+						<header>		
+								
+									<h1> Choose period time for balance sheet</h1>
+
+						</header>
+
+							
+									
+
+					<div class="row">
+		
+		
+					
+						<a href="showCurrentMonth"> Current month</a>
+						</br></br>
+				</div>
+						<div class="row">
+						<a href="showLastMonth"> Last month</a></br></br>
+			
+					</div>
+			
+				<form method="post" action="/viewbalance/showChoosePerriod">
+					<div class="row">
+					
+									<div >
+									<label> Date income <input class="przychod" type="date" name="date_begin" required></label>
+									</div></br></br>
+									
+									<div >
+									<label> Date income <input class="przychod" type="date" name="date_end" required></label>
+									</div></br></br>
+					</div>
+					
+					<input type="submit" value="Accept date">
+
+					
+				</form>
+
+									
+								
+
+							</div>
+						
+				
+				</article>
+		</main>
+{% endblock %}

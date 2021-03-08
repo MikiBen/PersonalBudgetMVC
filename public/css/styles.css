@@ -1,0 +1,330 @@
+body
+{
+	/*This pattern is downloaded from www.subtlepatterns.com */
+	background-image: url("img/beanstalk.png");
+	color: #efefef; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+	margin-top:5em;
+}
+
+
+h1
+{
+	text-align:center;
+	margin-top:0px;
+	color: #110066;
+	font-size:54px;
+
+}
+
+h2
+{
+	text-align:center;
+	margin-top:10px;
+	color: blue;
+	font-size:30px;
+}
+
+.footer
+{
+
+	margin:0;
+	bottom:0;
+	margin-top:50px;
+	color:black;
+	text-align:center;
+	
+}
+
+.window
+{
+
+	width: 400px;
+	margin-top:75px;
+	background-color:#4668b3;
+	padding:50px;
+	border-radius: 7px;
+}
+
+
+
+
+row>input[type=text]
+{
+	background-color:blue;
+}
+
+input[type=text],
+input[type=email],
+input[type=password]
+{
+	margin-left:0px;
+	
+	width:300px;
+	background-color:#efefef;
+	color: #666;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size:20px;
+	padding:10px;
+	box-sizing: border-box; /*nakazuje ustawić 300px niezaleźnie od szerokości contentu*/
+	outline:none;
+	margin-top:20px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus
+{
+		-webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+		-moz-box-shadow:0px 0px 10px 2px rgba(204,204,204,0.9);
+		box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+		border: 2px solid #a5cda5;
+		background-color:#e9f3e9;
+		color:#428c42;
+}
+
+input[type=submit]
+{
+	width:300px;
+	background-color:#36b03c;
+	font-size:20px;
+	color: white;
+	padding: 15px 10px;
+	margin-top:20px;
+	border: none;
+	border-radius:5px;
+	cursor:pointer;
+	letter-spacing:2px;
+	outline:none;
+}
+
+#cancel
+{
+	text-align:center;
+	width:300px;
+	background-color:blue;
+	font-size:20px;
+	color: white;
+	padding: 15px 10px;
+	margin-top:20px;
+	margin-left:50px;
+	border: none;
+	border-radius:5px;
+	cursor:pointer;
+	letter-spacing:2px;
+	outline:none;
+}
+
+
+
+.square
+{
+		float:left;
+		width:900px;
+		margin-top:30px;
+		padding:50px;
+
+		
+}
+
+.tile1
+{
+
+
+	height:170px;
+	background-color:#82b637;	
+	text-align:center;
+	border-radius:5px;
+	
+}
+
+.tile2
+{
+	
+	
+	width:100%;
+	background-color:#2084c2;	
+	height:auto;
+	text-align:center;
+	border-radius:5px;
+	padding-bottom:20px;
+}
+
+
+
+a.tilelink
+{
+	color:#fff;
+	text-decoration:none;
+	font-size:25px;
+}
+
+
+input.przychod,
+input.wydatek
+{
+	width:50%;
+}
+
+.przychod,
+.wydatek
+{
+	height:40px;
+	margin-left:10px;
+	color: #666;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 18px;
+	padding:10px;
+	box-sizing: border-box; /*nakazuje ustawić 300px niezaleźnie od szerokości contentu*/
+	outline:none;
+	margin-top:20px;
+	background-color:#efefef;
+}
+
+
+
+.przychod:focus,
+.wydatek:focus
+{
+	
+		-webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+		-moz-box-shadow:0px 0px 10px 2px rgba(204,204,204,0.9);
+		box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+		border: 2px solid #a5cda5;
+		background-color:#e9f3e9;
+		color:#428c42;
+}
+
+.row
+{
+	color: #110066;
+	font-size:24px;
+	font-weight:700;
+	text-align:center;
+
+}
+
+fieldset >legend
+{
+	color: #110066;
+	font-size:24px;
+	font-weight:700;
+}
+
+fieldset,
+.category
+{
+	color: #110066;
+	font-size:20px;
+	font-weight:700;
+	margin-top:40px;
+	cursor:default;
+	margin-bottom:40px;
+	
+}
+
+
+
+label>input,
+.radio>div>label,
+.category>div>label
+{
+	cursor:pointer;
+}
+
+input.button
+{
+	width:100%;
+	margin:0;
+}
+
+#cancel.button
+{
+	width:100%;
+	margin:0;
+	
+}
+
+tr>th
+{
+	font-size:20px;
+	text-align:center;
+	border: 2px solid;
+}
+
+tr>td
+{
+	font-size:16px;
+	text-align:center;
+	border: 2px solid;
+}
+
+@media(max-width:800px)
+{
+	tr>th
+{
+	font-size:18px;
+}
+tr>td
+{
+	font-size:14px;
+}
+	
+}
+
+@media(max-width:600px)
+{
+	tr>th
+{
+	font-size:16px;
+}
+	tr>td
+{
+	font-size:12px;
+	
+}
+}
+
+.sum
+{
+	color:green;
+	width:100%;
+	text-align:center;
+	margin-top:30px;
+	font-size:30px;
+}
+
+
+
+.PAmount
+{
+	width:15%;
+}
+
+.PDate
+{
+	width:25%;
+}
+
+.WAmount
+{
+	width:15%;
+}
+
+.WDate
+{
+	width:25%;
+}
+
+.error,
+.alert
+.alert-warning
+{
+	color:red;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+

@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block title %} Add income {% endblock %}
+
+{% block body %}
+
+	<main>
+			
+			<article>
+				<div class="container">
+				
+						<header>		
+								
+									<h1> Add income</h1>
+
+						</header>
+
+							
+							<div class="row">		
+
+<form action="/addIncome" method="post" encotype="multipart/form-data" class="col-lg-8 offset-lg-3 col-md-10 offset-md-2 ">
+									
+								<div class="mt-5 ">
+									<label> Amount income
+											
+									<input class="przychod" type="number" name="amount_income" placeholder="PLN"  min="0" step=0.01 required>
+									
+									</label>
+								</div>
+									
+						
+									
+								<div class="mb-4">
+								<label> Date income	<input class="przychod" type="date" name="date_income"  required value="{{date}}"></label>
+									</div>
+									
+									
+									<fieldset class=" radio mb-4">
+								
+								<legend> Income category </legend>
+										
+												{%  for income in  incomesCategory %}
+												
+													
+													
+													<div ><label ><input type="radio" value="{{income.id}}" name="category_incomes" required>{{income.name}}</label></div>	
+													
+													
+												{% endfor %}
+											
+									
+
+							
+						</fieldset>
+									
+								<fieldset>
+								
+							<legend> Comment </legend>
+								<div><label for="komentarz">
+								<textarea  name="income_coment" id="komentarz" rows="4" cols="48" maxlength="40">  </textarea></label>  </div>
+								</fieldset>
+								
+							<div class="row">
+							<label class="col-6"><input class="button" type="submit" value="Add income"></label>
+										
+										
+								<label class="col-6" ><a  href="menu.php"><input class="button"  id="cancel" value="Cancel"></a></label>
+								</div>
+									
+								</form>
+
+							</div>
+						
+					</div>
+				</article>
+		</main>
+{% endblock %}

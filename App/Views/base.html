@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+	<link rel="stylesheet" href="/css/styles.css" />
+	
+	<link rel="stylesheet" href="/bootstrap/bootstrap.min.css"/>
+	<link rel="stylesheet" href="/css/fontello.css" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet"/>
+</head>
+
+
+
+<body>
+<!--
+		<nav>
+			<ul>
+				<li><a href="Login">Log in</a></li>
+				<li><a href="Signup">Registration</a></li>
+					{% if current_user %}
+						<li><a href="/profile/show">Balance</a></li>
+						<li><a href="/logout">Log out</a></li>
+						{% endif%}
+			
+			</ul>
+		</nav>
+-->	
+	<div class="container">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Registration</a></li>
+                    <li><a href="/login">Log in</a></li>
+                    
+                </ul>
+                <ul class="nav navbar-nav navbar-right">                    
+                    {% if current_user %}
+						
+                        <li><a href="/menu/new">Menu</a></li>
+                        <li><a href="/incomes/new">Add income</a></li>
+                        <li><a href="/expenses/new">Add expense</a></li>
+                        <li><a href="/viewBalance/new">View balance</a></li>
+						<li><a href="/logout">Logout</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+
+
+		{% for message in flash_messages %}
+		<div class=" error alert alert-{{ message.type }}">
+			{{ message.body }}
+		</div>
+	{%endfor %}
+
+    {% block body %}
+			
+</div>
+	{% endblock %}
+	
+	{% block footer %}
+			<footer>
+						
+					<div class="footer"> 2020 &copy;  Mikołaj Narloch -  Personal budget
+
+					</div>
+		</footer>
+					<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+	
+		<script src="js/bootstrap.min.js"></script>
+    {% endblock %}
+</body>
+</html>

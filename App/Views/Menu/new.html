@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %} Menu {% endblock %}
+
+
+	
+{% block body %}			
+
+
+<main>
+	<article>
+			<div class="container">
+				<header>
+					<h1> Persolnal budget </h1></br>
+				</header>
+				
+					<div class="row mt-5">	
+							
+						<div class=" col-lg-4 col-sm-6" > 
+													
+							<figure class="tile1">
+							
+								<a href="/incomes/new" class="tilelink">
+								<i class="icon-money" ></i><br/> Add income
+								</a>	
+														
+							</figure>	
+						</div>			
+											
+						<div class=" col-lg-4 col-sm-6 "> 
+							<figure class="tile1">
+								<a href="/expenses/new" class="tilelink">
+								<i class="icon-basket" ></i><br/> Add expense
+								</a>	
+							</figure>	
+						</div>		
+											
+						<div class=" col-lg-4 col-sm-6 "> 
+							<figure class="tile1">
+								<a href="/viewBalance/new" class="tilelink">
+								<i class="icon-archive" ></i><br/> View balance
+								</a>	
+							</figure>	
+						</div>
+											
+						<div class="w-100"> </div>
+											
+						<div class="col-md-6 mt-3 " >			
+							<figure class="tile2">
+								<a class="tilelink">
+								<i class="icon-wrench" ></i><br/> Settings 
+								</a>	
+							</figure>	
+						</div>
+						
+						<div class="col-md-6 mt-3" >
+							<figure class="tile2">
+								<a href="/logout" class="tilelink">
+								<i class="icon-logout" ></i><br/> Log out
+								</a>	
+							</figure>	
+						</div>
+
+				</div>
+		</div>
+	</article>
+</main>
+{% endblock %}
